@@ -1,0 +1,8 @@
+Now the question arises what is directory enumeration, Directory enumeration is same as described in subdomain enumeration, instead of bruteforcing for possible active subdomains
+    we finds hidden directories for finding contents that website consist which donot meant to be publcily available or the directory that contains some sensitive information.
+    It is not necessary that the directory do contain only sensitive data but it can also have same functionalities that unauthorised segment of website contains instead it can retain
+    some other technologies other than home directories. If this directory have other functionalities it is possible that it do have outdated technologies in use which can be exploited
+    further to find vunerabilities or bugs in website.
+
+    So Directory enumeration is must after bruteforcing for subdomains.
+    For understanding what is subdomain enumeration you can refer to our <a href="https://thecyberjerry.github.io/subdomain.html" style="text-decoration: none;" >Github</a> page site which will explain you all about this.
