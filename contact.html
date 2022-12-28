@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{{title}}
+{%block body%}
+<h1 style="font-family: Arial, Helvetica, sans-serif;" ><u>
+    <center>
+        For any query Provide us with your Email <br>and we will be back to you!!
+    </center></u>
+</h1>
+<center>
+    <style>
+        .c{
+            margin-top: 10px;
+
+        }
+        img.b{
+            margin-top: 20px;
+            border-radius: 50px;
+            height: 500px;
+            width: 700px;
+        }
+    </style>
+    <img class= "b" src="{{url_for ('static',filename='background.png')}}"><br><br>
+    <form action="#" method="post">
+        <input type="email" placeholder="Enter your Email" name="email"><br>
+        <input type="submit" class="button" name="submit">
+    </form>
+</center>
+{% endblock %}

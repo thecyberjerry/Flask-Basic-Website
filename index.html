@@ -1,0 +1,255 @@
+{% extends "layout.html" %}
+{{title}}
+{%block body%}
+<body>
+    
+<header style="margin-left: 150px; margin-top: 50px;">
+    <font bg style="font-size:6vw; border:black; border-width:10px; border-style:outset; background-color:powderblue;" face="Verdana">Security that<br>Matters
+    </font>
+</header>
+<img src="{{ url_for ('static',filename='bg.png')}}"  style="float: right; margin-right: 120px; margin-top: -500px;" width="650px">
+
+<br><br><br><br><br><br><hr>
+
+<center>
+    <font style="font-family:brush script mt,cursive;" size="7">Have a look at these pdf's that are premium in markets but you can directly download them from our website for free.</font>
+</center>
+<br>
+<style>
+    <style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+</style>
+<center><button class="button button1 button2" style="margin-right: 100px;" onClick="window.open('{{url_for ('static',filename='pdfs/bug-bounty_v1.pdf')}}');">Bug-Bounty Playbook V1</button>
+    <button class="button button1 button2" style="margin-right: 100px;"onClick="window.open('{{url_for ('static',filename='pdfs/bug-bounty_v2.pdf')}}');">Bug-Bounty Playbook V2</button>
+    <button class="button button1 button2" style="margin-right: 100px;" onClick="window.open('{{url_for ('static',filename='pdfs/Comptia-Security.pdf')}}');">Comptia-Security</button></center>
+    <br><img src = "{{ url_for ('static',filename='mr-robot.png')}}" style="float: left;" width="500px">
+    <br><br><br><br>
+    <h1 style="font-family:cursive;" align="justify">Cyber security is an ever-growing concern. It is not just a matter of protecting the data of individuals and corporations, but also the integrity of our democratic process
+        Cyber security is a big concern in the future. We see more and more cyber-attacks every day. There are many reasons for this, including the fact that people are not aware of how to protect themselves from cyber-attacks.
+        In the last few years, cyber-attacks have been on the rise. This has prompted companies to invest in cyber-security systems so that they can protect their data from being stolen by hackers and other malicious actors.
+    </h3>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <br><br><br><br>
+    <h1 style="font-family:monaco, Consolas, Lucida Console, monospace;float:left; margin-left: 25px;">Hello <span class="auto-input"></span></h1>
+<script>
+    var typed = new Typed(".auto-input",{
+        strings : ["Hacker!!","CyberSecurity Engineers"],
+        typeSpeed : 50,    
+        backSpeed : 50,
+        loop : true
+    })
+</script>
+<br><br><br><br>
+
+<div >
+    <style>
+        img.cyber{
+            margin-top: -200px;
+            margin-right: 300px;
+            height: 180px;
+            width: 500px;
+            border-radius: 50px;
+        }
+    </style>
+    <img class="cyber" align="right" src="{{url_for ('static',filename='Cyber.webp')}}" >
+
+</div>
+
+<h3 style="font-size: 35px;font-family: monospace;margin-left: 70px; margin-right: 70px;" align="justify">"We are the Private CyberSecurity Awareness Firm who try to aware people about the CyberAttacks and risk of cyber-attacks, we create tools and resources
+for people so that they can use them to protect themselves against these attacks.
+We provide basic coded tools like already described in previous <big><b><a href="/directoryEnumeration.html">section</a></b></big> of directory enumeration, where you can learn
+how can you find hidden directories on an asset. Finding directories does not mean that you found a bug and you can report and get awarded you can use these tools 
+to do internal pentesting for your domain."
+
+</h1>
+<br><br><br>
+<h2 style="font-family: serif; margin-left: 25px;margin-right: 45px;" align="justify" >"Here are some of the Organisation that provide Security Solutions and Educations you can refer to them for learning CyberSecurity, bonus thing is that 
+    some of them also provide the opportunity to apply your security practises like exploiting systems and finding loopholes in the networks, codes and websites.
+    They organises bugbounty platform on which you can perfome Penetration Testing on them, and in return they reward you with bounties(Money)."
+
+    <br><br>
+    
+</h2>
+<style>
+    div.scrollmenu {
+      margin-left: 300px;
+      margin-right: 300px;  
+      background-color: #333;
+      background-color:lightseagreen;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      overflow: auto;
+      white-space: nowrap;
+    }
+    
+    div.scrollmenu a {
+      display: inline-block;
+      background-color:lightseagreen;
+      
+      color: white;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+    }
+    
+    div.scrollmenu a:hover {
+      background-color: #777;
+    }
+    /* p::first-letter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: brown;
+} */
+
+    img.round{
+      margin-left: 100px;               /* Round and A class are swapped by name by mistake use them wisely*/
+      margin-top: -150px;
+    }
+    img.a{
+      border-radius: 50px;
+      height: 200px;
+      width: 200px;
+    }
+    img.resize   {
+  max-width: 100%;
+  height: auto;
+}
+
+    </style>
+    <div class="scrollmenu">
+        <a href="https://hackerone.com/"><h1>Hackerone</h1></a>
+        <a href="https://bugcrowd.com/"><h1>BugCrowd</h1></a>
+        <a href="https://intigriti.com/"><h1>Intigriti</h1></a>
+        <a href="https://yeswehack.com/"><h1>YesWeHack</h1></a>
+        <a href="https://offensive-security.com/"><h1>Offensive-Security</h1></a>
+        <a href="https://synack.com/"><h1>Synack</h1></a>
+      </div>
+
+      <br><br>
+      <img class="resize"src="{{ url_for ('static',filename='what.png')}}" style="float: right; margin-top: -50px; margin-right: 90px;" width="500px"  height="500px">
+      <br><br><h1 style=" font-size: 100px;color: darkred ;font-family: cursive; margin-left: 50px;">Now what is bugbounty?</h1>
+      <br>
+      <div align="center"  >
+        <style>
+            .images{
+                height: 550px;
+                width: 1000px;
+                align-self: center;
+            }
+        </style>
+        <p class= "images" style="  font-size: 25px; text-align: justify; margin-left: -300px;margin-right: 25px;">"<font style="font-size: 3rem;
+            font-weight: bold;
+            color: brown;">A</font> bug bounty program is a deal offered by many websites, organizations and software developers by which individuals can receive recognition and compensation for reporting bugs, especially those pertaining to security exploits and vulnerabilities.
+          These programs allow the developers to discover and resolve bugs before the general public is aware of them, preventing incidents of widespread abuse and data breaches. Bug bounty programs have been implemented by a large number of organizations, including
+          Mozilla, Facebook, Google, Microsoft, Reddit, Uber, Yahoo and many more."
+        </p>
+        
+    </div><br><br>
+    <div class="round a" style="margin-left: 50px;">
+        <a href="https://bughunters.google.com/about/rules/6625378258649088/google-and-alphabet-vulnerability-reward-program-vrp-rules"><img class="round a" src="{{ url_for('static',filename='google.png') }}"></a>
+        <a href="https://www.facebook.com/security/advisories/Vulnerability-Disclosure-Policy"><img class="a" style="margin-left: 180px; margin-top: -150px;" src="{{ url_for('static',filename='Fb.png') }}"></a>
+        <a href="https://hackerone.com/uber?type=team"><img class="a" style="margin-left: 180px; margin-top: -150px;" src="{{ url_for('static',filename='Uber.png') }}"></a>
+        <a href="https://hackerone.com/reddit?type=team"><img class="a" style="margin-left: 180px; margin-top: -150px;" src="{{ url_for('static',filename='reddit.png') }}"></a>
+
+    </div>
+    <br><br><br><br><br><br>
+
+    <div>
+        <style>
+            img.giphy{
+                border-radius: 50px;
+                margin-left: 80px;
+                margin-top: -45px;
+                margin-bottom: 50px;
+                float: left;
+            }
+
+        </style>
+        <img border='2' class="giphy" src="{{ url_for ('static',filename='giphy.gif')}}">
+        <p style="background-color:lightsalmon;margin-bottom: 10px ;margin-left: 500px;margin-right: 10px;text-align: justify;font-family:monospace; font-weight: bolder; font-size: 35px;">We are trying to provide as much knowledge as we can only you have to stay connected with us through social media handles like 
+            <big><a href="https://github.com/thecyberjerry/" style="text-decoration: none;">Github</a></big>, <big><a href="https://twitter.com/thecyberjerry" style="text-decoration: none;">Twitter</a></big>,
+            and <big><a href="https://instagram.com/thecyberjerry" style="text-decoration: none;">Instagram</a></big>, we will give every updates about our resource update and new knowledgeable material.
+        </p>
+    </div>
+    <br><hr>
+    <div id="cf6_image" class="shadow"></div>
+        <style>
+             #cf6_image {
+  margin:0 auto;
+  width:500px;
+  height:500px;
+  border-radius: 50px;
+  transition: background-image 1s ease-in-out;
+  background-image:url("{{ url_for ('static',filename='social.png') }}");
+  background-repeat: no-repeat;
+  margin-top: 185px;
+  margin-bottom: 30px;
+  margin-right: 120px;
+  
+}
+
+#cf6_image:hover {
+  background-image:url("{{ url_for ('static',filename='followus.png') }}");
+  width:500px;
+  height:500px;
+  background-repeat: no-repeat;
+  
+}
+        </style>
+    <div>
+        <style>
+            img.github{
+                margin-top: -1000px;
+                margin-left: 50px;
+            }
+            img.twitter{
+                margin-top: -650px;
+                margin-left: 58px;
+            }
+            img.instagram{
+                margin-top: -300px;
+                margin-left: 68px;
+                border-radius: 50px;
+            }
+        </style>
+    <a href="https://github.com/thecyberjerry"><img class="github" height="200px" src="{{ url_for('static',filename='github.png') }}"><br></a>
+    <a href="https://twitter.com/thecyberjerry"><img class="twitter" height="180px" src="{{ url_for('static',filename='twitter.png') }}"><br></a>
+    <a href="https://instagram.com/thecyberjrry"><img  class="instagram" height="160px" src="{{ url_for('static',filename='instagram.png') }}"><br></a>
+
+    <a href="https://github.com/thecyberjerry" style="text-decoration: none;"><h1 style="font-family:cursive;font-size: 50px ;margin-top: -580px; margin-left: -800px;"align="center">
+        Github
+    </h1>    </a>
+    <a href="https://twitter.com/thecyberjerry" style="text-decoration: none;"><h1 style="font-family:cursive;font-size: 50px; margin-left: 500px;margin-top: 130px;">Twitter</h1></a>
+
+    <a href="https://instagram.com/thecyberjerry" style="text-decoration: none"><h1 style="font-family:cursive;font-size: 50px;margin-top:140px; margin-left:500px">Instagram</h1></a>
+    </div>
+
+      </div>
+
+</body>
+{% endblock %}
