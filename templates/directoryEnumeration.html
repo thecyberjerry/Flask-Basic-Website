@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{{title}}
+{%block body%}
+<center>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic ;">
+        <u><big>We have a Tool Called <a href="https://github.com/thecyberjerry/DirFU" style="text-decoration: none;" >DirFU</a> used for Directory Enumeration</big></u>
+    </h1>
+</center><br>
+<p style="font-size: xx-large; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" align="justify" >
+    We created a basic Directory enumerator which will enumerate directory for your ease in doing pentesting, as already described in our
+github <a href="https://github.com/thecyberjerry/DirFU" style="text-decoration: none;" >DirFU</a> tool that this is only made for beginners only. This tool do not
+contain any advance functionalities that is used for working professionals, all the tools that are available in our <big><a href="https://github.com/thecyberjerry/" style="text-decoration: none;" >Github</a></big> page.
+</p><br>
+<center>
+<p style="font-size: xx-large; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" align="justify" >
+Now the question arises what is directory enumeration, Directory enumeration is same as described in subdomain enumeration on our website <big><a href="https://thecyberjerry.github.io/subdomain.html" style="text-decoration: none;" >Subdomain</a></big> enumeration part, instead of bruteforcing for possible active subdomains
+    we finds hidden directories for finding contents that website consist which donot meant to be publicly available or the directory that contains some sensitive information.
+    It is not necessary that the directory do contain only sensitive data but it can also have same functionalities that unauthorised segment of website contains instead it can retain
+    some other technologies other than home directories. If this directory have other functionalities it is possible that it do have outdated technologies in use which can be exploited
+    further to find vunerabilities or bugs in website.
+
+    So Directory enumeration is must after bruteforcing for subdomains.
+    For understanding what is subdomain enumeration you can refer to our <big><a href="https://thecyberjerry.github.io/subdomain.html" style="text-decoration: none;" >Github</a></big> page site which will explain you all about this.
+</p>
+</center>
+<center><video width="900" height="500" id="vid" controls>
+        <source src="{{url_for ('static',filename='Dirfu.mp4')}}" type="video/mp4" ></video></center>
+
+<center>
+    <hr>
+    <script>
+    function ShowAndHide() {
+    var x = document.getElementById('SectionName');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+<link rel="stylesheet" href="{{ url_for ('static',filename='styles.css')}}">
+<button class="button-40" onclick="ShowAndHide()" role="button">Click to get CODE</button>
+<div id="SectionName" style="display:none">
+    <br/><br/><pre><big><b><p style="margin-left: 30px;" align="left">{{var}}</p></b></big></pre>
+</div>
+<hr>
+<br>
+<big>
+<font size="+3" face="Verdana">This is our Python Code so that you can analyze it carefully and implement it on your machine and can study the basic fundamental of
+    directory enumeration.
+</font>
+</big>
+</center>
+{% endblock %}

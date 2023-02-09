@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{{title}}
+{%block body%}
+
+  <center><h1><u><b>Flask Calculator</b></u></h1>
+  <img src="{{ url_for ('static',filename='flask.png')}}"</center><br><br><br>
+ <form action="/calculator.html" method="post" >
+     <style>
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>
+  <font size="5" face="Verdana" > Number 1: </font><input type="number" placeholder="Enter First Number" name="numberOne" required="required"> <br>
+  <font size="5" face="Verdana" > Number 2: </font><input type="number" placeholder="Enter Second Number" name="numberTwo" required="required">  <br><br>
+
+     <input type="submit" class="button" value="ADD" name="add" style="width:100px">
+     <input type="submit" class="button" value="SUB" name="sub" style="width:100px">
+     <input type="submit" class="button" value="MUL" name="mul" style="width:100px">
+     <input type="submit" class="button" value="DIV" name="div" style="width:100px"><br><br>
+  <p style="font-size: xx-large; font-family:Verdana">Result is: {{var}}</p>
+ </form>
+
+
+{% endblock %}
