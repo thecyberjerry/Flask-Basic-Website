@@ -5,7 +5,7 @@ import json
 import uuid
 
 app = Flask(__name__)
-app.secret_key = "@Th3CyberJ3rry271906"
+app.secret_key = "your-secret-key"
 @app.route('/',)
 def home():
     return render_template('/index.html',title = 'Home')
